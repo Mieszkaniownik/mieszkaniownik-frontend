@@ -94,7 +94,7 @@ steps:
         ls -la
         echo "Looking for helm-chart-frontend:"
         ls -la helm-chart-frontend/ || echo "helm-chart-frontend not found!"
-        
+
         helm upgrade --install ${_HELM_RELEASE} /workspace/helm-chart-frontend \
           --namespace=${_NAMESPACE} \
           --create-namespace \
